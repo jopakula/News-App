@@ -1,10 +1,12 @@
-package com.work.newsapp.ui.navigation
+package com.work.newsapp
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
+import com.work.navigation.BottomNavGraph
+import com.work.navigation.BottomNavigationBar
 
 @Composable
 fun MainScreen() {

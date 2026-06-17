@@ -1,4 +1,4 @@
-package com.work.newsapp.ui
+package com.work.components
 
 data class FakeArticle(
     val id: Int,

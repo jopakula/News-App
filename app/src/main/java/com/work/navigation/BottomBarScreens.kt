@@ -1,4 +1,4 @@
-package com.work.newsapp.ui.navigation
+package com.work.navigation
 
 import com.work.newsapp.R
 
@@ -7,20 +7,21 @@ sealed class BottomBarScreens(
     val title: String,
     val icon: Int
 ) {
+
     object Home : BottomBarScreens(
-        route = "home",
+        route = Graph.HOME_GRAPH,
         title = "Home",
         icon = R.drawable.home_icon
     )
 
     object Bookmarks : BottomBarScreens(
-        route = "bookmarks",
+        route = Graph.BOOKMARKS_GRAPH,
         title = "Bookmarks",
         icon = R.drawable.bookmark_icon
     )
 
     object Profile : BottomBarScreens(
-        route = "profile",
+        route = Graph.PROFILE_GRAPH,
         title = "Profile",
         icon = R.drawable.profile_icon
     )

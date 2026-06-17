@@ -42,7 +42,10 @@ android {
 dependencies {
 
     implementation(project(":designsystem"))
-    implementation(project(":features"))
+//    implementation(project(":presentation"))
+//    implementation(project(":navigation"))
+
+
 
     implementation(libs.androidx.navigation.compose)
 
