@@ -42,8 +42,15 @@ android {
 dependencies {
 
     implementation(project(":designsystem"))
-//    implementation(project(":presentation"))
-//    implementation(project(":navigation"))
+
+    implementation(project(":core:navigation"))
+    implementation(project(":core:domain"))
+    implementation(project(":core:data"))
+
+    implementation(project(":feature:profile"))
+    implementation(project(":feature:home"))
+    implementation(project(":feature:bookmarks"))
+    implementation(project(":feature:details"))
 
 
 
@@ -57,6 +64,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
