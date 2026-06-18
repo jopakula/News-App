@@ -41,18 +41,21 @@ android {
 
 dependencies {
 
-    implementation(project(":designsystem"))
+
 
     implementation(project(":core:navigation"))
+    implementation(project(":core:designsystem"))
     implementation(project(":core:domain"))
     implementation(project(":core:data"))
 
+    implementation(project(":feature:main"))
     implementation(project(":feature:profile"))
     implementation(project(":feature:home"))
     implementation(project(":feature:bookmarks"))
     implementation(project(":feature:details"))
 
-
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.core)
 
     implementation(libs.androidx.navigation.compose)
 

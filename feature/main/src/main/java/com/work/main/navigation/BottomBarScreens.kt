@@ -1,6 +1,7 @@
-package com.work.navigation
+package com.work.main.navigation
 
-import com.work.newsapp.R
+import com.work.main.R
+import com.work.navigation.Graph
 
 sealed class BottomBarScreens(
     val route: String,

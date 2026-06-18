@@ -1,4 +1,4 @@
-package com.work.navigation
+package com.work.main.navigation
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material3.Icon

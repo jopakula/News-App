@@ -1,4 +1,4 @@
-package com.work.details
+package com.work.designsystem.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement

@@ -27,6 +27,8 @@ dependencies {
 
     implementation(project(":core:navigation"))
 
+    implementation(libs.koin.androidx.compose)
+
     implementation(platform(libs.androidx.compose.bom))
 
     implementation(libs.androidx.core.ktx)

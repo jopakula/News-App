@@ -27,6 +27,8 @@ dependencies {
 
     implementation(platform(libs.androidx.compose.bom))
 
+    implementation(libs.koin.androidx.compose)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.navigation.compose)

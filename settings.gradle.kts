@@ -24,7 +24,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "News App"
 include(":app")
-include(":designsystem")
+//include(":designsystem")
 include(":core")
 include(":core:navigation")
 include(":feature")
@@ -34,3 +34,5 @@ include(":core:domain")
 include(":core:data")
 include(":feature:details")
 include(":feature:bookmarks")
+include(":core:designsystem")
+include(":feature:main")

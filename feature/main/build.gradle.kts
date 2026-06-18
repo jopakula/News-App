@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.work.bookmarks"
+    namespace = "com.work.main"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -13,6 +13,8 @@ android {
 
     defaultConfig {
         minSdk = 24
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -21,24 +23,21 @@ android {
     buildFeatures {
         compose = true
     }
+
 }
 
 dependencies {
-
     implementation(project(":core:navigation"))
     implementation(project(":core:designsystem"))
-    implementation(project(":core:domain"))
-    implementation(project(":feature:details"))
 
-    implementation(libs.koin.androidx.compose)
+    implementation(project(":feature:home"))
+    implementation(project(":feature:bookmarks"))
+    implementation(project(":feature:profile"))
 
     implementation(platform(libs.androidx.compose.bom))
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.navigation.compose)
-
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.material3)
-    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.koin.androidx.compose)
 }

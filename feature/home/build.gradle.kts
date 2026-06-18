@@ -26,8 +26,11 @@ android {
 dependencies {
 
     implementation(project(":core:navigation"))
+    implementation(project(":core:designsystem"))
     implementation(project(":core:domain"))
     implementation(project(":feature:details"))
+
+    implementation(libs.koin.androidx.compose)
 
     implementation(platform(libs.androidx.compose.bom))
 
