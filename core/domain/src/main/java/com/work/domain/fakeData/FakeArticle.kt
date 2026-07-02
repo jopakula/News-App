@@ -1,4 +1,4 @@
-package com.work.domain
+package com.work.domain.fakeData
 
 data class FakeArticle(
     val id: Int,

@@ -1,4 +1,4 @@
-package com.work.main.navigation
+package com.work.main.bottomNavigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -16,11 +16,10 @@ fun BottomNavGraph(
     modifier: Modifier = Modifier,
     navController: NavHostController
 ) {
-
     NavHost(
         modifier = modifier,
         navController = navController,
-        route = Graph.ROOT,
+        route = Graph.BOTTOM_NAV_GRAPH,
         startDestination = BottomBarScreens.Home.route
     ) {
         homeNavGraph(

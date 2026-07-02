@@ -1,4 +1,4 @@
-package com.work.main.navigation
+package com.work.main.bottomNavigation
 
 import com.work.main.R
 import com.work.navigation.Graph

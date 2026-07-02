@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.work.main"
+    namespace = "com.work.auth"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -13,8 +13,6 @@ android {
 
     defaultConfig {
         minSdk = 24
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -28,18 +26,16 @@ android {
 
 dependencies {
     implementation(project(":core:navigation"))
-    implementation(project(":core:designsystem"))
-
-    implementation(project(":feature:home"))
-    implementation(project(":feature:bookmarks"))
-    implementation(project(":feature:profile"))
-
-    implementation(project(":feature:auth"))
 
     implementation(platform(libs.androidx.compose.bom))
 
+    implementation(libs.koin.androidx.compose)
+
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
+
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.material3)
-    implementation(libs.androidx.navigation.compose)
-    implementation(libs.koin.androidx.compose)
+    implementation(libs.androidx.compose.ui.tooling.preview)
 }

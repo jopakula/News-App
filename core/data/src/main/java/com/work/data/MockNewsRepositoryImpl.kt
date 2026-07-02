@@ -1,7 +1,7 @@
 package com.work.data
 
-import com.work.domain.FakeArticle
 import com.work.domain.NewsRepository
+import com.work.domain.fakeData.FakeArticle
 
 class MockNewsRepositoryImpl : NewsRepository {
 
