@@ -1,9 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
-    namespace = "com.work.network"
+    namespace = "com.work.auth.network"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -23,10 +24,15 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(libs.androidx.junit)
+
+    implementation(project(":core:domain"))
+
+    implementation(libs.koin.core)
+
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging)
+    implementation(libs.kotlinx.serialization.json)
+
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.kotlinx)
 }

@@ -1,6 +1,8 @@
 package com.work.newsapp
 
 import android.app.Application
+import com.work.auth.authFeatureModule
+import com.work.auth.authModule
 import com.work.bookmarks.bookmarksFeatureModule
 import com.work.data.dataModule
 import com.work.domain.domainModule
@@ -18,6 +20,8 @@ class NewsApplication : Application() {
                 listOf(
                     domainModule,
                     dataModule,
+                    authModule,
+                    authFeatureModule,
                     homeFeatureModule,
                     bookmarksFeatureModule
                 )

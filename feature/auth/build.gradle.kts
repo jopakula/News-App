@@ -26,6 +26,7 @@ android {
 
 dependencies {
     implementation(project(":core:navigation"))
+    implementation(project(":core:domain"))
 
     implementation(platform(libs.androidx.compose.bom))
 

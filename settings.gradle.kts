@@ -26,6 +26,8 @@ rootProject.name = "News App"
 include(":app")
 
 include(":core")
+include(":core:network")
+include(":core:network:auth")
 include(":core:navigation")
 include(":core:designsystem")
 include(":core:domain")
@@ -38,4 +40,3 @@ include(":feature:details")
 include(":feature:bookmarks")
 include(":feature:main")
 include(":feature:auth")
-include(":core:network")

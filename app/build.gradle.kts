@@ -41,18 +41,19 @@ android {
 
 dependencies {
 
-
-
     implementation(project(":core:navigation"))
     implementation(project(":core:designsystem"))
     implementation(project(":core:domain"))
     implementation(project(":core:data"))
+    implementation(project(":core:network:auth"))
 
     implementation(project(":feature:main"))
     implementation(project(":feature:profile"))
     implementation(project(":feature:home"))
     implementation(project(":feature:bookmarks"))
     implementation(project(":feature:details"))
+    implementation(project(":feature:auth"))
+
 
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.core)
